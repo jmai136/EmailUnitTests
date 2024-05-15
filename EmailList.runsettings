@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- File name extension must be .runsettings -->
+<!-- For more information, see https://docs.microsoft.com/en-us/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file?view=vs-2022  -->
+<RunSettings>
+	<TestRunParameters>
+		<Parameter name="Standard" value ="zhaid@example.com" />
+		<Parameter name ="AcceptableSpecialCharactersInName" value ="A~!$%^&amp;*_=+}{'?-@domain.com" />
+		<Parameter name ="DotBeforeAt" value ="firstname.lastname@example.com" />
+		<Parameter name="InRangeLength" value ="email@subdomain.example.com" />
+		<Parameter name ="UppercaseAlphaInDomain" value ="name@UPPERCASE.com" />
+		<Parameter name ="UppercaseAlphaInLastCharacter" value ="name@domain.coM" />
+		<Parameter name ="AcceptableSpecialCharacter_DashSign" value ="waffaprubouye-2869@yopmail.com" />
+		<Parameter name ="NonDotComDomain" value ="abc@example.jp" />
+		<Parameter name="Digits" value ="t532953@564613.36m" />
+		<Parameter name ="AcceptableSpecialCharactersInDomain" value ="abc@~!$%^&amp;*_=+}{'?-.com"/>
+		<Parameter name ="MultipleHigherDomains" value ="tippugrautrepra-3693@kili.org.com" />
+		
+		<Parameter name ="NullOrEmpty" value =""/>
+		<Parameter name ="NoAlphaBeginningCharacter_Digit" value ="1mail@something.com" />
+		<Parameter name ="NoAlphaEndCharacter_Digit" value ="email@123.123.123.123" />
+		<Parameter name ="SpacesInName" value ="Joe Smith email@example.com" />
+		<Parameter name ="SpacesInDomain" value ="email@e xa mple .c o m " />
+		<Parameter name ="NameLengthLessThan1" value ="@example.com" />
+		<Parameter name ="InvalidCharactersInName" value ="©µ@example.com" />
+		<Parameter name ="InvalidCharactersInDomain" value ="email@eðñòóôõö÷.com" />
+		<Parameter name ="NoAlphaEndCharacter_InvalidCharactersInRange" value ="email@domain.org[" />
+		<Parameter name ="NoAlphaEndCharacter_InvalidCharactersAboveRange" value ="email@domain.org©" />
+		<Parameter name ="InvalidSecondCharacterInNameOnward" value ="A©µ@domain.com" />
+		<Parameter name ="InRangeSpecialCharacterInNameButInvalid" value ="name)@domain.com" />
+		<Parameter name ="InRangeSpecialCharacterInDomainButInvalid" value ="name@domain(.com" />
+		<Parameter name ="NameLengthMoreThan100" value ="loremipsumdolorsitametconsecteturadipiscingelitseddoeiusmodtemporincididuntutlaboreetdoloremagnaaliqua@example.com" />
+		<Parameter name ="DomainLengthMoreThan100" value ="abc@loremipsumdolorsitametconsecteturadipiscingelitseddoeiusmodtemporincididuntutlaboreetdoloremagnaaliqua.com" />
+		<Parameter name ="DomainLengthLessThan1" value ="abc@." />
+		<Parameter name ="DuplicateAtSymbol" value ="a@b@c@example.com" />
+		<Parameter name ="NoAtSymbol" value ="plainaddress.com" />
+		<Parameter name ="NoDotSymbolAfterAt" value ="plainaddress@com" />
+	</TestRunParameters>
+
+	<LoggerRunSettings>
+		<Loggers>
+			<Logger friendlyName="console" enabled="True">
+				<Configuration>
+					<Verbosity>quiet</Verbosity>
+				</Configuration>
+			</Logger>
+			<Logger friendlyName="trx" enabled="True">
+				<Configuration>
+					<LogFileName>foo.trx</LogFileName>
+				</Configuration>
+			</Logger>
+			<Logger friendlyName="html" enabled="True">
+				<Configuration>
+					<LogFileName>Mai_Report.html</LogFileName>
+				</Configuration>
+			</Logger>
+		</Loggers>
+	</LoggerRunSettings>
+</RunSettings>
