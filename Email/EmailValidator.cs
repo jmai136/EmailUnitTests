@@ -39,15 +39,9 @@ namespace Email
                 )
                 return false;
 
-            int numberOfInstances = 0;
+            int atPosition = email.IndexOf("@");
 
-            foreach (char potentialAtSymbol  in email)
-            {
-                if (potentialAtSymbol == '@')
-                    numberOfInstances++;
-            }
-
-            if (numberOfInstances > 1)
+            if (email.IndexOf("@", atPosition + 1) != -1)
                 return false;
 
             string[] subemails = email.Split('@');
